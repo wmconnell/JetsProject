@@ -1,7 +1,6 @@
-#type, model, speed, range, price
-domesticated,Turkey,55,0.1,100
+domesticated,Turkey,55,1,100
 carrier,Pigeon,93,500,400
-predator,Peregrine Falcon,240,700,10000
+predator,Falcon,240,700,10000
 carrier,Stork,15,120,7500
-domesticated,Duck,
-predator,Owl,
+domesticated,Duck,40,800,20
+predator,Owl,40,700,3000
