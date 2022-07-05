@@ -1,9 +1,9 @@
 package com.skilldistillery.jets.entities;
 
-abstract class Bird { // Jet
+public abstract class Bird { // Jet
 
 	private String species;
-	private int speed;
+	private double speed;
 	private int range;
 	private int price;
 
@@ -11,7 +11,7 @@ abstract class Bird { // Jet
 
 	}
 
-	public Bird(String species, int speed, int range, int price) {
+	public Bird(String species, double speed, int range, int price) {
 		this.species = species;
 		this.speed = speed;
 		this.range = range;
@@ -26,11 +26,11 @@ abstract class Bird { // Jet
 		this.species = species;
 	}
 
-	public int getSpeed() {
+	public double getSpeed() {
 		return speed;
 	}
 
-	public void setSpeed(int speed) {
+	public void setSpeed(double speed) {
 		this.speed = speed;
 	}
 
@@ -51,9 +51,9 @@ abstract class Bird { // Jet
 	}
 
 	public void fly() {
-		System.out.println("The " + this.getClass().getSimpleName() + " has a speed of " + this.speed + ", a range of "
-				+ this.range + ",and a price of " + this.price + ". It can fly for " + (this.range / this.speed)
-				+ " before it requires refeeding.");
+		System.out.println("The " + species + " has a speed of " + this.speed + " mph, a range of "
+				+ this.range + " miles, and a price of " + this.price + " dollars. It can fly for " + ((double)(this.range) / (double)(this.speed))
+				+ " hours before it requires refeeding.");
 	}
 
 }

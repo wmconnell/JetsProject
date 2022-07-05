@@ -6,14 +6,18 @@ public class Predator extends Bird implements CombatReady{ //FighterJet
 		super();
 	}
 
-	public Predator(String species, int speed, int range, int price) {
+	public Predator(String species, double speed, int range, int price) {
 		super(species, speed, range, price);
 	}
 
 	@Override
 	public String toString() {
-		return "Species: " + getSpecies() + ", speed: " + getSpeed() + ", range: "
-				+ getRange() + ", price:" + getPrice() + "\n";
+		return "Species: " + getSpecies() + ", Speed: " + getSpeed() + " mph, Range: "
+				+ getRange() + " miles, Price: $" + getPrice() + "\n";
+	}
+
+	public void fight() {
+		System.out.println("Predatory birds! Ensure your talons and beaks are sharpened, and fight your enemy!!");
 	} 
 
 	

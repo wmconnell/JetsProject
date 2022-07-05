@@ -1,4 +1,4 @@
-domesticated,Turkey,55,1,100
+domesticated,Turkey,55,60,100
 carrier,Pigeon,93,500,400
 predator,Falcon,240,700,10000
 carrier,Stork,15,120,7500
