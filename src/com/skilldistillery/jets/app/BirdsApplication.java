@@ -1,23 +1,24 @@
 package com.skilldistillery.jets.app;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import com.skilldistillery.jets.entities.Aviary;
+import com.skilldistillery.jets.entities.Carrier;
+import com.skilldistillery.jets.entities.Domesticated;
+import com.skilldistillery.jets.entities.Predator;
 
 public class BirdsApplication {
 
 //	private List<Bird> flock2; 
-	
+
 	public static void main(String[] args) {
 		BirdsApplication birdApp = new BirdsApplication();
+
 		Aviary aviary = new Aviary();
 		Scanner scanner = new Scanner(System.in);
-		aviary.run(scanner, "jets.csv");
+		aviary.run(scanner, "jets.txt");
+		
+		birdApp.menu(scanner);
 	}
 
 //	public void run(Scanner scanner) {
@@ -48,8 +49,12 @@ public class BirdsApplication {
 //		
 //		Aviary(listOfBirds);
 //	}
-	
+
 	public void menu(Scanner scanner) {
+//		Domesticated domesticated = new Domesticated();
+//		Predator predator = new Predator();
+//		Carrier carrier = new Carrier();
+
 		System.out.println("Please make a selection from the list below:");
 		System.out.println("");
 		System.out.println("1. List flock");
@@ -66,7 +71,10 @@ public class BirdsApplication {
 		case "1":
 			System.out.println();
 		case "2":
-			System.out.println();
+			System.out.println("Flying all birds!");
+//			domesticated.fly();
+//			carrier.fly();
+//			predator.fly();
 		case "3":
 			System.out.println();
 		case "4":
@@ -84,7 +92,7 @@ public class BirdsApplication {
 		default:
 			System.out.println("Please enter a valid option.");
 		}
-		
+
 	}
 
 }
